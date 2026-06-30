@@ -1,0 +1,5 @@
+{"event_id":"102","user":"Bob","action":"purchase","timestamp":"2026-06-30T09:02:00"}
+{"event_id":"106","user":"David","action":"login","timestamp":"2026-06-30T09:10:00"}
+{"event_id":"107","user":"Sophia","action":"logout","timestamp":"2026-06-30T09:11:00"}
+{"event_id":"108","user":"Olivia","action":"purchase","timestamp":"2026-06-30T09:15:00"}
+{"event_id":"109","user":"Liam","action":"login","timestamp":"2026-06-30T09:18:00"}

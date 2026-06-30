@@ -1,0 +1,49 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# IDE (PyCharm)
+.idea/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Output data (Parquet files)
+output/
+*.parquet
+
+# Checkpoints and processed state
+checkpoints/
+processed/
+
+# Logs
+*.log
+
+# Jupyter Notebook checkpoints (if used later)
+.ipynb_checkpoints/
+
+# Environment variables
+.env
+
+# pytest cache
+.pytest_cache/
+
+# mypy cache
+.mypy_cache/
+
+# coverage reports
+htmlcov/
+.coverage
+
+# distribution / build
+dist/
+build/
+*.egg-info/
