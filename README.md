@@ -108,3 +108,27 @@ Before processing:
 - Save checkpoints after each batch.
 
 If the application restarts, processing resumes from the last checkpoint without duplicating events.
+
+
+--------------------------------------
+
+Your processor.py is doing 4 main things:
+
+Reads JSONL log files (like a stream)
+Processes events in batches
+Prevents duplicates (exactly-once semantics)
+Writes output as partitioned Parquet files
+Saves state so it can resume after crash (checkpointing)
+
+
+--------------------------------------
+
+
+Exactly-once check
+if event_id in processed:
+    continue
+Meaning:
+
+If event already seen → skip it
+
+👉 This is the core of idempotency
